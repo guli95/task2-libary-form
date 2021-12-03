@@ -1,0 +1,124 @@
+body{font-family: Arial, Helvetica, sans-serif;;
+    }
+   h1{
+       width: 100%;
+       text-align: center;
+   } 
+   .errorMessage{
+       color: red;
+       font-weight: bold;
+   }
+    /* tables styles */
+    table {
+        display: none;
+        margin: 10px auto;
+        width: 80%;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        background-color: #EEE;
+        max-width: 600px;
+    }
+    
+    thead {
+        text-align: center;
+        background-color: #000 ;
+        color: white;
+        text-transform: uppercase;
+    }
+    td, tr{text-align: center;
+    border: 1px solid black;
+    }
+    
+    tr:nth-child(even){
+        background-color: white;
+    }
+/* 
+    form styles */
+
+    .form{
+        max-width: 600px;
+        padding: 20px 12px 10px 20px;
+        font: 13px;
+        margin: 0 auto;
+       
+    }
+    .form-heading{
+        font-weight: bold;
+        font-style: italic;
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        font-size: 15px;
+        padding-bottom: 3px;
+    }
+    .form label{
+        display: block;
+        margin: 0px 0px 15px 0px;
+        height: 15px;
+    }
+    .form label > span{
+        width: 100px;
+        font-weight: bold;
+        float: left;
+        padding-top: 8px;
+        padding-right: 5px;
+    }
+   
+    .form input.input-field, .form .select-field{
+        width: 48%;	
+    }
+    .form input.input-field, 
+    .form .tel-number-field, 
+    .form .textarea-field, 
+     .form .select-field{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border: 1px solid #C2C2C2;
+        box-shadow: 1px 1px 4px #EBEBEB;
+        -moz-box-shadow: 1px 1px 4px #EBEBEB;
+        -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        padding: 7px;
+        outline: none;
+        text-align: center;
+    }
+    #priority{
+        width: 20%;
+    }
+    .form .input-field:focus,  
+    .form .select-field:focus{
+        border: 1.5px solid #0C0;
+    }
+    .form input[type=submit],
+    .btn{
+        border: none;
+        padding: 8px 15px 8px 15px;
+        background: #FF8500;
+        color: #fff;
+        box-shadow: 1px 1px 4px #DADADA;
+        -moz-box-shadow: 1px 1px 4px #DADADA;
+        -webkit-box-shadow: 1px 1px 4px #DADADA;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+    .form input[type=submit]:hover,
+    .btn:hover{
+        background: #EA7B00;
+        color: #fff;
+        cursor: pointer;
+    }
+    .emptyMessage{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 600;
+        font-style: italic;
+    }
+   button.btn{
+       margin: 20px auto;
+       display: block;
+   }
+    
