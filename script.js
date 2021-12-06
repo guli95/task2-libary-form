@@ -9,7 +9,6 @@ const emptyMessage = document.querySelector(".emptyMessage");
 const btn = document.querySelector(".btn");
 const table = document.querySelector("table");
 const bgc = document.querySelector(".background");
-const pageSize = document.documentElement.offsetHeight + table.offsetHeight;
 
 const validateForm = () => {
   let message = [];
@@ -55,7 +54,7 @@ const addBook = () => {
       tr.innerHTML = `<td>${book.title}</td><td>${book.author}</td><td>${book.priority}</td><td>${book.category}</td>`;
     }
   });
-  bgc.style.height = `${pageSize}px`;
+  bgc.style.height = `${document.documentElement.offsetHeight + table.offsetHeight}px`;
   localStorage.setItem("books", JSON.stringify(books));
 };
 const resetForm = () => {
@@ -92,4 +91,5 @@ btn.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
 });
+const pageSize = document.documentElement.offsetHeight + table.offsetHeight;
 window.onload = bgc.style.height = `${pageSize}px`;
