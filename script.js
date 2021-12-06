@@ -54,6 +54,7 @@ const addBook = () => {
       tr.innerHTML = `<td>${book.title}</td><td>${book.author}</td><td>${book.priority}</td><td>${book.category}</td>`;
     }
   });
+  bgc.style.height = `${pageSize}px`;
   localStorage.setItem("books", JSON.stringify(books));
 };
 const resetForm = () => {
