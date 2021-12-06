@@ -37,7 +37,6 @@ const validateForm = () => {
     }px`;
   } else return;
 };
-// const pageSize = document.documentElement.offsetHeight + table.offsetHeight;
 const addBook = () => {
   let books = JSON.parse(window.localStorage.getItem("books"));
   if (!books) {
